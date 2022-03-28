@@ -25,7 +25,6 @@ public class stringTask {
             else result += cur;
             prev = cur;
         }
-
         return result;
     }
 }
