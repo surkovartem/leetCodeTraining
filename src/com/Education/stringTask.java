@@ -27,4 +27,15 @@ public class stringTask {
         }
         return result;
     }
+
+    /*
+      LeetCode Task 2114. Maximum Number of Words Found in Sentences
+    */
+    public static int mostWordsFound(String[] sentences){
+        int maxLetter = 0;
+        for (String s: sentences){
+            maxLetter = Math.max(s.split(" ").length, maxLetter);
+        }
+        return maxLetter;
+    }
 }
