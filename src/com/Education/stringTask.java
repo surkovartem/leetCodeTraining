@@ -38,4 +38,18 @@ public class stringTask {
         }
         return maxLetter;
     }
+
+    /*
+      LeetCode Task 1859. Sorting the Sentence
+    */
+    public static String sortSentence(String s) {
+        String[] words = s.split(" ");
+        String[] shuffledWords = new String[words.length];
+        for(int i = 0; i < words.length; i++){
+            int index = Integer.parseInt(words[i].substring(words[i].length()-1));
+            shuffledWords[index - 1] =
+                    words[i] == null || words[i].length() == 0 ? (words[i] = null) : (words[i] = words[i].substring(0, words[i].length() - 1));
+        }
+        return String.join(" ", shuffledWords);
+    }
 }
