@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class stringTask {
     /*
-         LeetCode Task 13. Roman to Integer
+        LeetCode Task 13. Roman to Integer
     */
     public static int romanToInt(String s) {
         int result = 0;
@@ -29,7 +29,7 @@ public class stringTask {
     }
 
     /*
-      LeetCode Task 2114. Maximum Number of Words Found in Sentences
+        LeetCode Task 2114. Maximum Number of Words Found in Sentences
     */
     public static int mostWordsFound(String[] sentences){
         int maxLetter = 0;
@@ -40,7 +40,7 @@ public class stringTask {
     }
 
     /*
-      LeetCode Task 1859. Sorting the Sentence
+        LeetCode Task 1859. Sorting the Sentence
     */
     public static String sortSentence(String s) {
         String[] words = s.split(" ");
