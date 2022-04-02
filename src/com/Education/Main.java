@@ -14,6 +14,10 @@ public class Main {
 
         //LeetCode Task 1859. Sorting the Sentence
         String task1859Str = "is2 sentence4 This1 a3";
-        out.println("LeetCode Task 1859. Sorting the Sentence:\n" + task1859Str + "\n" + stringTask.sortSentence(task1859Str));
+        out.println("LeetCode Task 1859. Sorting the Sentence:\n" + task1859Str + "\n" + stringTask.sortSentence(task1859Str) + "\n");
+
+        //LeetCode Task 1108. Defanging an IP Address
+        String task1108 = "1.1.1.1";
+        out.println("LeetCode Task 1108. Defanging an IP Address:\n" + stringTask.defangIPaddr(task1108) + "\n");
      }
 }
