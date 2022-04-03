@@ -19,7 +19,7 @@ public class algorithmTask {
     }
 
     //for print into main.java
-    public static StringBuilder stringBuilder;
+    public static StringBuilder stringBuilder = new StringBuilder();
     public static String listNodeToString(ListNode listNode){
         if (listNode != null){
             stringBuilder.append("[").append(listNode.val).append("]");
