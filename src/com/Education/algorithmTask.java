@@ -10,11 +10,22 @@ public class algorithmTask {
 
     }
 
+    //for print to test
     public static void printListNode(ListNode listNode){
         if (listNode != null){
             System.out.print("[" + listNode.val + "] ");
             printListNode(listNode.next);
         }
+    }
+
+    //for print into main.java
+    public static StringBuilder stringBuilder;
+    public static String listNodeToString(ListNode listNode){
+        if (listNode != null){
+            stringBuilder.append("[").append(listNode.val).append("]");
+            listNodeToString(listNode.next);
+        }
+        return stringBuilder.toString();
     }
 
     /*
