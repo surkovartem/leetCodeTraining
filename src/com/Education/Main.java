@@ -24,6 +24,11 @@ public class Main {
         String task1108 = "1.1.1.1";
         out.println("\tLeetCode Task 1108. Defanging an IP Address: " + task1108 + " -> " + stringTask.defangIPaddr(task1108) + "\n");
 
+        //LeetCode Task LeetCode Task 344. Reverse String
+        char[] task344 = {'h','e','l','l','o'};
+        out.println("\tLeetCode Task 344. Reverse String: " + stringTask.charArrayToString(task344) + " -> "
+                + stringTask.charArrayToString(stringTask.reverseString(task344)) + "\n");
+
 
         //LeetCode Tasks Algorithms
         out.println("\n[LEETCODE TASKS ALGORITHM]");
