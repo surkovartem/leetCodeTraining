@@ -1,5 +1,6 @@
 package com.Education;
 import java.util.LinkedList;
+import java.util.Objects;
 
 import static java.lang.System.*;
 
@@ -42,7 +43,14 @@ public class Main {
         algorithmTask.ListNode list2Node1 = new algorithmTask.ListNode(1, list2Node2);
 
         out.println("\tLeetCode Task 21. Merge Two Sorted Lists: "
-                + algorithmTask.listNodeToString(algorithmTask.mergeTwoLists(list1Node1, list2Node1)));
+                + algorithmTask.listNodeToString(algorithmTask.mergeTwoLists(list1Node1, list2Node1)) + "\n");
         algorithmTask.stringBuilder.setLength(0);
-     }
+
+        //LeetCode Task 1. Two Sum
+        int[] task1Nums = {2,7,11,15};
+        int task1Target = 9;
+        out.println("\tLeetCode Task 1. TwoSum: " + "nums = "
+                + algorithmTask.arrayToString(task1Nums) + " target = " + task1Target + "\n"
+                + "\tresult = " + algorithmTask.arrayToString(Objects.requireNonNull(algorithmTask.twoSum(task1Nums, task1Target))));
+    }
 }

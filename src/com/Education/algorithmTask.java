@@ -1,5 +1,7 @@
 package com.Education;
 
+import java.util.HashMap;
+
 public class algorithmTask {
     public static class ListNode{
         int val;
@@ -48,5 +50,30 @@ public class algorithmTask {
         }
         tail.next = list1 != null ? list1 : list2;
         return parth.next;
+    }
+
+    /*
+        LeetCode Task1. Two sum
+     */
+    public static int[] twoSum(int[] nums, int target){
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++){
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i < nums.length; i++){
+            int temp = target - nums[i];
+            if (map.containsKey(temp) && map.get(temp) != i){
+                return new int[] {map.get(temp), i};
+            }
+        }
+        return null;
+    }
+
+    public static String arrayToString(int[] arr){
+        StringBuilder result = new StringBuilder("");
+        for (int i = 0; i < arr.length; i++){
+            result.append("[" + arr[i] + "]");
+        }
+        return result.toString();
     }
 }
