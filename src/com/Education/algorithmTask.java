@@ -1,6 +1,7 @@
 package com.Education;
 
-import java.util.HashMap;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class algorithmTask {
     public static class ListNode{
@@ -75,5 +76,17 @@ public class algorithmTask {
             result.append("[" + arr[i] + "]");
         }
         return result.toString();
+    }
+
+    /*
+        LeetCode Task 1929. Concatenation of Array
+     */
+    public static int[] getConcatenation(int[] arr){
+        int[] result = new int[arr.length*2];
+        for (int i = 0; i < arr.length; i++){
+            result[i] = arr[i];
+            result[i+arr.length] = arr[i];
+        }
+        return result;
     }
 }

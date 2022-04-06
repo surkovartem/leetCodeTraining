@@ -51,6 +51,11 @@ public class Main {
         int task1Target = 9;
         out.println("\tLeetCode Task 1. TwoSum: " + "nums = "
                 + algorithmTask.arrayToString(task1Nums) + " target = " + task1Target + "\n"
-                + "\tresult = " + algorithmTask.arrayToString(Objects.requireNonNull(algorithmTask.twoSum(task1Nums, task1Target))));
+                + "\tresult = " + algorithmTask.arrayToString(Objects.requireNonNull(algorithmTask.twoSum(task1Nums, task1Target))) + "\n");
+
+        //LeetCode Task 1929. Concatenation of Array
+        int[] task1929Nums = {1,2,1};
+        out.println("\tLeetCode Task 1929. Concatenation of Array: " + "nums = " + algorithmTask.arrayToString(task1929Nums) + "\n\t"
+                + algorithmTask.arrayToString(algorithmTask.getConcatenation(task1929Nums)) + "\n");
     }
 }
